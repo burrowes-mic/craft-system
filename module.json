@@ -1,0 +1,32 @@
+{
+    "name": "craft-system",
+    "title": "C.R.A.F.T. System",
+    "description": "An in-depth crafting system developed for D&D 5e",
+    "author": "cerritus",
+    "version": "0.1.0",
+    "minimumCoreVersion": "0.6.0",
+    "compatibleCoreVersion":"0.7.0",
+    "dependencies": [
+        {
+          "type": "module",
+          "name": "compendium-folders",
+          "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json"
+        }
+      ],
+    "packs": [
+                {
+                  "name": "craft-docs",
+                  "label": "C.R.A.F.T. Docs",
+                  "path": "./packs/craft-docs.db",
+                  "entity": "JournalEntry",
+                  "module": "craft-system"
+                },
+                {
+                  "name": "craft-recipes",
+                  "label": "C.R.A.F.T. Recipes",
+                  "path": "./packs/craft-recipes.db",
+                  "entity": "JournalEntry",
+                  "module": "craft-system"
+                }
+            ]
+  }
